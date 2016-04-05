@@ -1,0 +1,57 @@
+<!doctype html> 
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="css/html" href="general.css">
+		<title> Home </title> 
+	</head>
+
+	<body> 
+		<header> Loftus Hall </header>
+		<!-- NAV BAR, don't modify -->
+			<nav>
+				<ul class="topnav">
+					<li> <a href="homepage.html"> Home </a> </li> 
+
+					<li> <a href=""> History </a> </li>
+
+					<li> <a href=""> Contact</a> 
+					</li>
+
+					<li> <a href=""> About Us </a> 
+						<ul class="subnav">
+							<li> <a href=""> Something </a> </li>
+							<li> <a href=""> Something else </a> </li>
+						</ul>
+					</li>
+
+					<li> <a href=""> Photo Gallery </a> </li>
+
+					<li> <a href=""> Key Info </a> </li>
+
+					<li> <a href=""> Reviews </a> </li>
+
+				</ul>
+			</nav>
+
+		<!-- NAV BAR, don't modify -->
+
+		<article> 
+
+			<div class="content">
+
+				<h1> Welcome! </h1>
+				<p> Content will go here. </p>
+					
+			</div>
+
+		</article>
+
+		<footer>
+			©2016 Team 4
+		</footer>
+
+	</body>
+
+</html>
