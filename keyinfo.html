@@ -1,0 +1,94 @@
+<!doctype html> 
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="css/html" href="general.css">
+		<title> Home </title>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(52.148577, -6.910711),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	</head>
+
+	<body> 
+		<header> Loftus Hall </header>
+		<!-- NAV BAR, don't modify -->
+			<nav>
+				<ul class="topnav">
+					<li> <a href="homepage.html"> Home </a> </li> 
+
+					<li> <a href=""> History </a> </li>
+
+					<li> <a href=""> Contact</a> 
+					</li>
+
+					<li> <a href=""> About Us </a> 
+						<ul class="subnav">
+							<li> <a href=""> Something </a> </li>
+							<li> <a href=""> Something else </a> </li>
+						</ul>
+					</li>
+
+					<li> <a href=""> Photo Gallery </a> </li>
+
+					<li> <a href=""> Key Info </a> </li>
+
+					<li> <a href=""> Reviews </a> </li>
+
+				</ul>
+			</nav>
+
+		<!-- NAV BAR, don't modify -->
+
+		<article> 
+
+			<div class="content">
+
+				<h1> Location </h1>
+				<p> Loftus Hall, Hook Head, New Ross, Wexford. </p>
+				
+				<div id="googleMap" style="width:700px;height:500px;"></div>
+				
+				<h1> Prices </h1>
+				
+				<ul>
+				<li> €10 Adult </li>
+				<li> €7 Senior </li>
+				<li> €6 Student (Age 12-18 years or holder of a legitimate Student Card.) </li>
+				<li> €5 Child (Age 4-11) </li>
+				<li> Infants 0-3 years go free but require inputting on your booking </li>
+				<li> €25 Family Ticket - 2 Adults + 2 Children (4-11 years) </li>
+				<li> €30 Family Ticket - 2 Adults + 3/4 Children (4-11 years) </li>
+				</ul>
+				
+				<form method="POST" action="http://griffith.dxhost.net/echo.php" name="pricelist">
+				Ticket Type:
+				<select>
+				<option value="Adult">Adult</option>
+				<option value="Senior">Senior</option>
+				<option value="Student">Student</option>
+				<option value="Child">Child</option>
+				<option value="Family-2 Adult+2 Children">2 Adult+2 Children</option>
+				<option value="Family-2 Adult+3/4 Children">2 Adult+3/4 Children</option>
+				</select></br>
+					
+			</div>
+
+		</article>
+
+		<footer>
+			©2016 Team 4
+		</footer>
+
+	</body>
+
+</html>
