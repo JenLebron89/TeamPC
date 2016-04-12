@@ -52,23 +52,55 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<article> 
 
 			<div class="content">
-
-				<h1> Location </h1>
-				<p> Loftus Hall, Hook Head, New Ross, Wexford. </p>
-				
-				<div id="googleMap" style="width:700px;height:500px;"></div>
-				
-				<h1> Prices </h1>
-				
-				<ul>
-				<li> €10 Adult </li>
-				<li> €7 Senior </li>
-				<li> €6 Student (Age 12-18 years or holder of a legitimate Student Card.) </li>
-				<li> €5 Child (Age 4-11) </li>
-				<li> Infants 0-3 years go free but require inputting on your booking </li>
-				<li> €25 Family Ticket - 2 Adults + 2 Children (4-11 years) </li>
-				<li> €30 Family Ticket - 2 Adults + 3/4 Children (4-11 years) </li>
-				</ul>
+			
+				<table>
+					<tr>
+					<td>
+					<strong>Ticket Type</strong>
+					</td>
+					<td>
+					<strong>Price</strong>
+					</td>
+					</tr>
+					
+					<tr>
+					<td>Adult</td>
+					<td>€10</td>
+					</tr>
+					
+					<tr>
+					<td>Senior</td>
+					<td>€7</td>
+					</tr>
+					
+					<tr>
+					<td>Student(12-18 years or holder of a student card)</td>
+					<td>€6</td>
+					</tr>
+					
+					<tr>
+					<td>Child(4-11 years)</td>
+					<td>€5</td>
+					</tr>
+					
+					<tr>
+					<td>Infants 0-3</td>
+					<td>Free</td>
+					</tr>
+					
+					<tr>
+					<td>Family Ticket(2 Adults + 2 Children)</td>
+					<td>€25</td>
+					</tr>
+					
+					<tr>
+					<td>Family Ticket(2 Adults + 3/4 Children)</td>
+					<td>€30</td>
+					</tr>
+					
+				</table>
+					</br>
+					
 				
 				<form method="POST" action="http://griffith.dxhost.net/echo.php" name="pricelist">
 				Ticket Type:
@@ -81,10 +113,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				<option value="Family-2 Adult+3/4 Children">2 Adult+3/4 Children</option>
 				</select></br>
 				
-				<input type="submit" value="Submit" />
-				
-				</form>
+				<input type="submit" value="Buy Ticket(s)" />
 					
+				</form>
+
+				<h1> Location </h1>
+				<p> Loftus Hall, Hook Head, New Ross, Wexford. </p>
+				
+				<div id="googleMap" style="width:700px;height:500px;"></div>
+				
+				
 			</div>
 
 		</article>
