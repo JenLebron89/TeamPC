@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="css/html" href="general.css">
 		<title> Home </title>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
+<!-- script function for map -->		
 <script>
 function initialize() {
   var mapProp = {
@@ -40,7 +41,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 					<li> <a href=""> Photo Gallery </a> </li>
 
-					<li> <a href=""> Key Info </a> </li>
+					<li> <a href="keyinfo.html"> Key Info </a> </li>
 
 					<li> <a href=""> Reviews </a> </li>
 
@@ -52,6 +53,49 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		<article> 
 
 			<div class="content">
+			
+			<h1>Opening Times For 2016</h1>
+				<div class="openinghours" style="max-width:800px;position:relative">
+
+				<img class="mySlides" src="1.png" style="width:100%">
+				<img class="mySlides" src="2.png" style="width:100%">
+				<img class="mySlides" src="3.png" style="width:100%">
+				<img class="mySlides" src="4.png" style="width:100%">
+				<img class="mySlides" src="5.png" style="width:100%">
+				<img class="mySlides" src="6.png" style="width:100%">
+				<img class="mySlides" src="7.png" style="width:100%">
+				<img class="mySlides" src="8.png" style="width:100%">
+				<img class="mySlides" src="9.png" style="width:100%">
+				<img class="mySlides" src="10.png" style="width:100%">
+				<img class="mySlides" src="11.png" style="width:100%">
+				<img class="mySlides" src="12.png" style="width:100%">
+				
+
+				<a class="back" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+				<a class="forward" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+<!-- script function for image slider -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+			
 			
 				<table>
 					<tr>
